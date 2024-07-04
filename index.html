@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Walid Feki</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Walid Feki</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Walid Feki</h1>
+        <p class="section__text__p2">FullStack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/walidfeki/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/WalidF123'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2.5 years <br />Optus: Tech Sales Rep</p>
+              <p>Footlocker: Sales Rep</p>
+
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>June 2022 - June 2025</p>
+              <p> Bachelors Of Computer Science Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                 I am Walid Feki, currently pursuing a Bachelor of Computer Science at RMIT University. With 2.5 years of experience in both sales and technical roles,
+                I have developed strong skills in managing inventory, providing customer service, and achieving sales targets.
+                I have also completed certifications in <b>Microsoft AI/Azure fundamentals</b> and received a <b>Global Leadership Program certificate</b>. In addition to my academic and professional experiences,
+                I have worked on various software engineering projects, including a personal website and a Super Mario themed Tic-Tac-Toe game.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-grid-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>SASS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Intermediate
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>React JSX</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Foot Locker</h2>
+                <div class="article-container">
+                    <article>
+                        <div>
+                            <h3>November 2022 - Present</h3>
+                            <div>
+                                <p>Successfully assisted in managing inventory and reduced cluttering in pre-existing systems by providing inputs to management on inefficient routines. Communicated alternative product options to ensure customers receive the best possible deal based on their financial budget.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Optus</h2>
+                <div class="article-container">
+                    <article>
+                        <div>
+                            <h3>December 2022 - June 2023</h3>
+                            <div>
+                                <p>Negotiated pricing and contractual terms resulting in a 15% increase in quarterly sales. Proficient technological knowledge allowed for the completion of customers’ orders at a fast pace, increasing overall revenue and customer satisfaction. Exceeded quarterly sales targets by an average of 25%, resulting in recognition as the top performer for two consecutive quarters.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            
+            <!-- Project 1 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="slideshow-container" id="project1-slideshow">
+                  <div class="mySlides project1">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                  </div>
+                  <div class="mySlides project1">
+                    <img src="./assets/project-1a.png" alt="Project 1 - Image 2" class="project-img" />
+                  </div>
+                  <div class="slideshow-controls">
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1, 0)"></span>
+                    <span class="dot" onclick="currentSlide(2, 0)"></span>
+                  </div>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/WalidF123/Tic-Tac-Toe'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://walidf123.github.io/Tic-Tac-Toe/'">Live Demo</button>
+              </div>
+              <div class="tech-stack">
+                <p><br></p>
+                <p><b>Tech Stack: </b>HTML, JavaScript, CSS, GitHub</p>
+                <p><br></p>
+              </div>
+              <button class="btn btn-color-2 project-btn" onclick="toggleDescription('project1-description')">Show Description</button>
+              <div id="project1-description" class="description hidden">
+                <p>This is a Super-Mario themed Tic-Tac-Toe game built using HTML, CSS, and JavaScript. It features a user-friendly interface and game logic for two players.</p>
+              </div>
+            </div>
+      
+            <!-- Project 2 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="slideshow-container" id="project2-slideshow">
+                  <div class="mySlides project2">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                  </div>
+                  <div class="mySlides project2">
+                    <img src="./assets/project-2a.png" alt="Project 2 - Image 2" class="project-img" />
+                  </div>
+                  <div class="mySlides project2">
+                    <img src="./assets/project-2b.png" alt="Project 2 - Image 2" class="project-img" />
+                  </div>
+                  <div class="mySlides project2">
+                    <img src="./assets/project-2c.png" alt="Project 2 - Image 2" class="project-img" />
+                  </div>
+                  <div class="slideshow-controls">
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                  </div>
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                  </div>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">SOIL: Online organic grocer</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/WalidF123/FullStack-Site'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='http://WalidF123.github.io/FullStack-Site'">Live Demo</button>
+              </div>
+              <div class="tech-stack">
+                <p><br></p>
+                <p><b>Tech Stack: </b>React JSX, Node.JS, phpAdmin, sequelize, Render, JavaScript, CSS, GitHub</p>
+                <p><br></p>
+              </div>
+              <button class="btn btn-color-2 project-btn" onclick="toggleDescription('project2-description')">Show Description</button>
+              <div id="project2-description" class="description hidden">
+                <p>This is a full stack website that utilizes React JSX as the frontend and Node.js and MySQL as the backend. It allows
+                     users to create accounts and login, leave reviews on products they purchased, see reviews from other users, edit or 
+                     delete their profile, and add products to their carts. All user information, product information, and reviews are stored in the backend.</p>
+              </div>
+            </div>
+      
+            <!-- Project 3 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="slideshow-container" id="project3-slideshow">
+                  <div class="mySlides project3">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                  </div>
+                  <div class="mySlides project3">
+                    <img src="./assets/project-3a.png" alt="Project 3 - Image 2" class="project-img" />
+                  </div>
+                  <div class="slideshow-controls">
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                  </div>
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1, 2)"></span>
+                    <span class="dot" onclick="currentSlide(2, 2)"></span>
+                  </div>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://walidf123.github.io/Weather-App/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://WalidF123.github.io/Weather-App'">Live Demo</button>          
+              </div>
+              <div class="tech-stack">
+                <p><br></p>
+                <p><b>Tech Stack: </b>React JSX,JavaScript, CSS, GitHub, API</p>
+                <p><br></p>
+              </div>
+              <button class="btn btn-color-2 project-btn" onclick="toggleDescription('project3-description')">Show Description</button>
+              <div id="project3-description" class="description hidden">
+                <p>A simple weather application that gets its data from an API key from the openweather.com</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:wfeki85@gmail.com">wfeki85@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/walidfeki/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+    function toggleDescription(id) {
+      var description = document.getElementById(id);
+      if (description.classList.contains('hidden')) {
+        description.classList.remove('hidden');
+      } else {
+        description.classList.add('hidden');
+      }
+    }
+  </script>
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  
