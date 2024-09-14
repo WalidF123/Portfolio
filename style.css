@@ -260,6 +260,8 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
 }
 
 .about-containers,
@@ -269,6 +271,9 @@ section {
 
 .about-pic {
     border-radius: 2rem;
+    max-width: 100%;
+    height: auto;
+  
 }
 
 .arrow {
@@ -351,6 +356,9 @@ article .icon {
     .experience-grid-container {
         grid-template-columns: 1fr;
     }
+    .section-container {
+        flex-direction: column;
+      }
 }
 
 /* Projects Section */
